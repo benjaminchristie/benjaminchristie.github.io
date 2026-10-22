@@ -1,7 +1,7 @@
 # Newest first. type: conference | journal | preprint
 # venue is the short tag on the left; venue_full is optional.
 # status (optional) replaces the "venue_full, year" line, e.g. "Under review at ICRA 2027".
-# Link keys (all optional): arxiv, pdf, doi, code, video, website
+# Link keys (all optional): arxiv, pdf, code, doi, video, website
 
 - title: "From Local Corrections to Generalized Skills: Improving Neuro-Symbolic Policies with MEMO"
   authors: [Benjamin A. Christie, Yinlong Dai, Mohammad Bararjanianbahnamiri, Simon Stepputtis, Dylan P. Losey]
@@ -11,6 +11,8 @@
   venue_full: IEEE/RSJ International Conference on Intelligent Robots and Systems
   arxiv: https://arxiv.org/abs/2603.04560
   pdf: https://collab.me.vt.edu/pdfs/ben_iros2026.pdf
+  code: https://github.com/VT-Collab/memo
+  website: https://collab.me.vt.edu/memo/
 
 - title: "Show and Tell: Unifying Physical Demonstrations and Language Corrections for Neuro-Symbolic Robots"
   authors: [Benjamin A. Christie, Siddarth Jain, Dylan P. Losey]
@@ -25,6 +27,7 @@
   status: Under review at ACM Transactions on Human-Robot Interaction
   arxiv: https://arxiv.org/abs/2504.06124
   pdf: https://collab.me.vt.edu/pdfs/ben_2026-1.pdf
+  code: https://github.com/safe-interactions-mclq/mclq
 
 - title: "Fine-Tuning Robot Policies While Maintaining User Privacy"
   authors: [Benjamin A. Christie, Sagar Parekh, Dylan P. Losey]
@@ -33,6 +36,8 @@
   status: Under review at IEEE Robotics and Automation Letters
   arxiv: https://arxiv.org/abs/2509.18311
   pdf: https://collab.me.vt.edu/pdfs/ben_2026-2.pdf
+  website: https://prop-icra26.github.io
+  code: https://github.com/prop-icra26/prop-icra26.github.io/tree/code
 
 - title: "Language Movement Primitives: Grounding Language Models in Robot Motion"
   authors: [Yinlong Dai, Benjamin A. Christie, Daniel J. Evans, Dylan P. Losey, Simon Stepputtis]
@@ -41,6 +46,8 @@
   status: Under review at IEEE Transactions on Robot Learning
   arxiv: https://arxiv.org/abs/2602.02839
   pdf: https://collab.me.vt.edu/pdfs/dai_2026.pdf
+  website: https://collab.me.vt.edu/lmp
+  code: https://github.com/lmp-26/lmp-26.github.io/tree/code
 
 - title: "Dispersion-Bounded Trajectory Optimization via Many-RRT*"
   authors: [Theodore M. Belmont, Benjamin A. Christie, Anton Netchaev]
@@ -90,6 +97,7 @@
   arxiv: https://arxiv.org/abs/2304.08539
   pdf: https://collab.me.vt.edu/pdfs/ben_thri2023.pdf
   doi: https://doi.org/10.1145/3675758
+  code: https://github.com/VT-Collab/LIMIT-learning-interfaces
 
 - title: "Aligning Learning with Communication in Shared Autonomy"
   authors: [Joshua Hoegerman, Shahabedin Sagheb, Benjamin A. Christie, Dylan P. Losey]

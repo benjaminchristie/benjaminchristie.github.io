@@ -13,7 +13,7 @@ permalink: /showcase/
     <div class="talk-text">
       <h3>{{ t.title }}</h3>
       {% if t.subtitle %}<p class="subtitle">{{ t.subtitle }}</p>{% endif %}
-      <p class="meta">{{ t.event }}{% if t.paper %} &middot; <a href="{{ t.paper }}">Paper</a>{% endif %} &middot; <a href="{{ deck }}">Full screen</a></p>
+      <p class="meta">{{ t.event }}{% include links.html item=t %} &middot; <a href="{{ deck }}">Full screen</a></p>
       <p class="summary">{{ t.summary }}</p>
     </div>
     <button class="slide" data-src="{{ deck }}" aria-label="Load slides for {{ t.title }}">

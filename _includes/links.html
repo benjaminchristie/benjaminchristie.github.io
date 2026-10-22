@@ -1,0 +1,3 @@
+{%- assign keys = "arxiv,pdf,code,doi,video,website" | split: "," -%}
+{%- assign labels = "arXiv,PDF,Code,DOI,Video,Website" | split: "," -%}
+{%- for k in keys %}{% if include.item[k] %} &middot; <a href="{{ include.item[k] }}">{{ labels[forloop.index0] }}</a>{% endif %}{% endfor -%}
