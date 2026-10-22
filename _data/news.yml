@@ -1,31 +1,25 @@
 # Newest first is easiest to read, but the page sorts by date either way.
 # date: YYYY-MM-DD. text: markdown, so [links](https://...) work.
 - date: 2026-10-23
-  text: "Presented our lab's work on neuro-symbolic policies for manipulation at [VRS2026](https://virginia-robotics.github.io/)."
+  text: "Presented our lab's work on neuro-symbolic policies for manipulation at [VRS 2026](https://virginia-robotics.github.io/)."
 
 - date: 2026-09-28
   text: "Presented [MEMO](https://arxiv.org/abs/2603.04560) at IROS 2026."
 
 - date: 2026-09-22
-  text: "Passed my oral Candidacy Exams, I am now a PhD Candidate. See some of the slides from this exam [here](https://benjaminchristie.github.io/showcase/)."
+  text: "Passed my oral Candidacy Exams; I am now a PhD Candidate. See some of the slides from this exam [here](https://benjaminchristie.github.io/showcase/)."
 
 - date: 2026-06-16
   text: "[MEMO](https://arxiv.org/abs/2603.04560) has been accepted for publication in the Proceedings of IROS 2026."
 
-- date: 2026-03-04
-  text: "[MEMO](https://arxiv.org/abs/2603.04560) is on arXiv, and will appear at IROS 2026."
-
-- date: 2026-02-02
-  text: "[Language Movement Primitives](https://arxiv.org/abs/2602.02839) is on arXiv."
-
 - date: 2026-01-01
   text: "[A Modular Haptic Display with Reconfigurable Signals](https://arxiv.org/abs/2506.05648) has been accepted for publication in IEEE ToH."
 
-- date: 2025-09-22
-  text: "[Fine-Tuning Robot Policies While Maintaining User Privacy](https://arxiv.org/abs/2509.18311) is on arXiv."
+- date: 2025-05-15
+  text: "Presented [Personalizing Interfaces to Humans with User-Friendly Priors](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11128246) at ICRA 2025."
 
-- date: 2025-06-06
-  text: "[A Modular Haptic Display with Reconfigurable Signals](https://arxiv.org/abs/2506.05648) is on arXiv."
+- date: 2024-06-01
+  text: "Accepted a second DoD SMART Scholar award, I will be continuing my research as a PhD student in the Collab!"
 
-- date: 2025-04-08
-  text: "[Safe Interaction via Monte Carlo Linear-Quadratic Games](https://arxiv.org/abs/2504.06124) is on arXiv."
+- date: 2024-04-20
+  text: "Defended my Master's Thesis: Adaptive Communication Interfaces for Human-Robot Collaboration"
