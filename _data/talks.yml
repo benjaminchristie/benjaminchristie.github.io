@@ -34,4 +34,4 @@
   slide: 1
   thumb: prop.jpg
   paper: https://arxiv.org/abs/2509.18311
-  summary: A model-agnostic framework that uses keys to transform a policy's intermediate features, so one network personalizes to each user without leaking between them.
+  summary: A model-agnostic framework that uses keys to transform a policy's intermediate features, so a single network personalizes to multiple users without leaking information between them.
