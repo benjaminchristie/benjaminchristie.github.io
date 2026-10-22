@@ -23,7 +23,16 @@
 
 * { box-sizing: border-box; }
 
-html { font-size: 18px; }
+html {
+  font-size: 18px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
+
+/* Safari */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
 
 body {
   margin: 0;
@@ -122,6 +131,29 @@ section > p, .theme p {
 
 .filters button.on { border-color: var(--accent); color: var(--link); }
 
+.news { list-style: none; margin: 0; padding: 0; }
+.news li {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 1rem;
+  padding: 0.25rem 0;
+}
+.news .date {
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: right;
+  padding-top: 0.05rem;
+}
+details summary {
+  cursor: pointer;
+  color: var(--link);
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  margin: 0.4rem 0 0 6.5rem;
+}
+
 .year {
   font-size: 1.15rem;
   font-weight: normal;
@@ -214,5 +246,8 @@ footer {
   .themes { grid-template-columns: 1fr; gap: 1rem; }
   .pubs li { grid-template-columns: 1fr; gap: 0.1rem; }
   .venue { text-align: left; }
+  .news li { grid-template-columns: 1fr; gap: 0; }
+  .news .date { text-align: left; }
+  details summary { margin-left: 0; }
   section > p, .theme p { text-align: left; }
 }

@@ -7,6 +7,26 @@ layout: default
   </p>
 </section>
 
+<section id="news">
+  <h2>News</h2>
+  {%- assign items = site.data.news | sort: "date" | reverse %}
+  <ol class="news">
+    {%- for n in items limit: 5 %}
+    <li><span class="date">{{ n.date | date: "%b %Y" }}</span><span>{{ n.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></li>
+    {%- endfor %}
+  </ol>
+  {%- if items.size > 5 %}
+  <details>
+    <summary>Older</summary>
+    <ol class="news">
+      {%- for n in items offset: 5 %}
+      <li><span class="date">{{ n.date | date: "%b %Y" }}</span><span>{{ n.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></li>
+      {%- endfor %}
+    </ol>
+  </details>
+  {%- endif %}
+</section>
+
 <section id="research">
   <h2>Research</h2>
   <div class="themes">
