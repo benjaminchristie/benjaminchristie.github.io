@@ -1,0 +1,1 @@
+var e=`/talks/mclq/assets/mclq_build_2-NPbgI7VE.png`;export{e as t};

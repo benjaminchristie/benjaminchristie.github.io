@@ -2,5 +2,5 @@
   url: https://github.com/benjaminchristie/arxiv-tree
   description: builds a citation tree from an arXiv paper, for getting up to speed in a new field.
 - name: bchr.xyz
-  url: https://www.bchr.xyz
+  url: https://bchr.xyz
   description: spatio-temporal encrypted messaging without an account. essentially a pastebin for messaging

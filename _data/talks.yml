@@ -1,0 +1,37 @@
+# deck: folder under talks/ (built with _scripts/build-talk.sh)
+# slide: slide to open on; thumb: image in assets/talks/
+
+- title: Show and Tell
+  subtitle: Unifying Physical Demonstrations and Language Corrections for Neuro-Symbolic Robots
+  event: ICRA 2027 submission video
+  deck: show-and-tell
+  slide: 1
+  thumb: show-and-tell.jpg
+  summary: Robots learn skills from both physical demonstrations and language corrections. Providing demonstrations before corrections lifts zero-shot success from 45% to 72%.
+
+- title: MEMO
+  subtitle: "From Local Corrections to Generalized Skills: Improving Neuro-Symbolic Policies with MEMO"
+  event: IROS 2026 talk
+  deck: memo
+  slide: 1
+  thumb: memo.jpg
+  paper: https://arxiv.org/abs/2603.04560
+  summary: Aggregates local language corrections into a skillbook of generalized skills, reaching 88% success on a real robot with about 1.5 corrections per trial.
+
+- title: MCLQ
+  subtitle: Safe Interaction via Monte Carlo Linear-Quadratic Games
+  event: PhD preliminary exam
+  deck: mclq
+  slide: 1
+  thumb: mclq.jpg
+  paper: https://arxiv.org/abs/2504.06124
+  summary: A stochastic local search for real-time, adjustable safety. In a user study, MCLQ cut collisions without slowing the robot's task.
+
+- title: PRoP
+  subtitle: Fine-Tuning Robot Policies While Maintaining User Privacy
+  event: PhD preliminary exam
+  deck: prop
+  slide: 1
+  thumb: prop.jpg
+  paper: https://arxiv.org/abs/2509.18311
+  summary: A model-agnostic framework that uses keys to transform a policy's intermediate features, so one network personalizes to each user without leaking between them.

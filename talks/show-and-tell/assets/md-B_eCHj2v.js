@@ -1,0 +1,10 @@
+import{L as e,T as t,X as n,_ as r,_t as i,g as a,ht as o,v as s}from"./modules/shiki-BfJ6CqqC.js";import{nt as c,tt as l,vt as u}from"./index-BTsrQAAg.js";import{t as d}from"./default-DCVkKxni.js";var f=`/talks/show-and-tell/assets/sim_collage-BnCuVxd3.mp4`,p=u({__name:`slides.md__slidev_8`,setup(u){let{$slidev:p,$nav:m,$clicksContext:h,$clicks:g,$page:_,$renderContext:v,$frontmatter:y}=c();return h.setup(),(c,u)=>(e(),r(d,i(t(o(l)(o(y),7))),{default:n(()=>[u[0]||=a(`h2`,null,`User Study`,-1),s(` No \`class: "!px-8"\` on this slide, tempting as the extra width is: it
+     would set this heading 2.5rem left of the two User Study slides after it,
+     and the heading jumping sideways between them is more obvious than the
+     grid being 80px narrower. The collage is height-limited anyway. `),s(` 2048x768, 9s, built by tools/collage.py from third_party/icra27_videos.
+     Twenty-four of the volunteers' own teaching sessions: one task per column,
+     in the order the caption lists them, three sessions deep. Covering all eight
+     tasks and every participant whose session was captured. Each tile is
+     time-normalised to the same nine seconds, so the clips run at 1.4x to 6x:
+     a teaching session is minutes long and the point here is the scale of the
+     study, not any one person's trajectory. `),u[1]||=a(`div`,{class:`sg-stage`},[a(`video`,{src:f,autoplay:``,muted:``,loop:``,playsinline:``,preload:`auto`}),a(`div`,{class:`sg-names`},[a(`span`,null,`Close the bottle`),a(`span`,null,`Empty the cabinet`),a(`span`,null,`Empty the fridge`),a(`span`,null,`Put the banana on the plate`),a(`span`,null,`Season the food`),a(`span`,null,`Set the table`),a(`span`,null,`Stack the cubes`),a(`span`,null,`Wipe the plate`)])],-1),u[2]||=a(`p`,{class:`!text-[1.05rem] text-center !mt-4 !mb-0 italic`},`Sixteen participants taught the robot skills across eight tasks in simulation.`,-1)]),_:1},16))}},[[`__scopeId`,`data-v-14fc9b6b`]]);export{p as default};

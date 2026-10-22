@@ -1,0 +1,38 @@
+---
+layout: default
+title: Showcase
+permalink: /showcase/
+---
+<section id="showcase">
+  <h2>Research Showcase</h2>
+  <p class="note">Slides from recent talks. Click a slide to step through it here, or open it full screen.</p>
+
+  {%- for t in site.data.talks %}
+  {%- assign deck = "/talks/" | append: t.deck | append: "/#/" | append: t.slide %}
+  <article class="talk">
+    <div class="talk-text">
+      <h3>{{ t.title }}</h3>
+      {% if t.subtitle %}<p class="subtitle">{{ t.subtitle }}</p>{% endif %}
+      <p class="meta">{{ t.event }}{% if t.paper %} &middot; <a href="{{ t.paper }}">Paper</a>{% endif %} &middot; <a href="{{ deck }}">Full screen</a></p>
+      <p class="summary">{{ t.summary }}</p>
+    </div>
+    <button class="slide" data-src="{{ deck }}" aria-label="Load slides for {{ t.title }}">
+      <img src="/assets/talks/{{ t.thumb }}" alt="" loading="lazy">
+      <span class="play">View slides</span>
+    </button>
+  </article>
+  {%- endfor %}
+</section>
+
+<script>
+  // swap the thumbnail for the live deck on click
+  document.querySelectorAll('.talk .slide').forEach(b => b.addEventListener('click', () => {
+    const f = document.createElement('iframe');
+    f.src = b.dataset.src;
+    f.title = b.getAttribute('aria-label');
+    f.allow = 'fullscreen';
+    f.className = 'slide';
+    b.replaceWith(f);
+    f.focus();
+  }));
+</script>
