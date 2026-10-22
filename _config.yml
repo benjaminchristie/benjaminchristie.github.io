@@ -1,0 +1,3 @@
+title: Benjamin A. Christie
+me: Benjamin A. Christie
+exclude: ["CV___*.pdf", node_modules, dev, LICENSE, Gemfile, Gemfile.lock]

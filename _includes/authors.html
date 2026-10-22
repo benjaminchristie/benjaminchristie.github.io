@@ -1,0 +1,1 @@
+{% for a in include.authors %}{% if a == site.me %}<b>{{ a }}</b>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}

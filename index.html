@@ -1,21 +1,120 @@
+---
+---
 <!doctype html>
-<html lang="en" data-critters-container>
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Benjamin Christie's Website</title>
-  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href>
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" -->
-  <!--   rel="stylesheet"> -->
-
-  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-<style>:root{--purple: #c678dd;--fg: #abb2bf;--grey: #5c6370;--light-bg: #32363e;--bg: #282c34}*{font-family:Palatino Linotype!important;color:#abb2bf}body{background-color:#282c34;margin:0!important}body::-webkit-scrollbar{width:1em}body::-webkit-scrollbar-track{box-shadow:inset 0 0 6px #0000004d}body::-webkit-scrollbar-thumb{background-color:#32363e;outline:#5c6370}
-</style><link rel="stylesheet" href="styles-QGLSHI6S.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-QGLSHI6S.css"></noscript></head>
+  <title>Benjamin A. Christie</title>
+  <meta name="description" content="Benjamin A. Christie, PhD student at Virginia Tech working on robot learning and human-robot interaction.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <app-root></app-root>
-<script src="polyfills-RT5I6R6G.js" type="module"></script><script src="main-I5LC6GFL.js" type="module"></script></body>
+<div class="page">
+
+<header class="masthead">
+  <h1>Benjamin A. Christie</h1>
+  <p class="role">PhD candidate, Mechanical Engineering &middot; Virginia Tech</p>
+  <nav class="links">
+    <a href="mailto:benc00@vt.edu">Email</a>
+    <a href="https://scholar.google.com/citations?user=aqKf6ZkAAAAJ">Scholar</a>
+    <a href="https://github.com/benjaminchristie">GitHub</a>
+    <a href="https://collab.me.vt.edu/">Collab</a>
+    <a href="assets/cv.pdf">CV</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="about">
+  <p>
+    I study how robots learn from humans. My work spans generalist robotics, neuro-symbolic policies, robust imitation learning, game-theoretic planning, and learned robot-to-human communication interfaces. I'm advised by <a href="https://collab.me.vt.edu/">Dylan Losey</a> in Collab at Virginia Tech, where my dissertation is on safe, personalized robots across physical and semantic interactions. I'm also a DoD SMART Scholar and a Mechanical Engineer at the U.S. Army Engineer Research and Development Center (ERDC), Information Technology Laboratory.
+  </p>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+  <div class="themes">
+    <div class="theme">
+      <h3>Neuro-Symbolic Policies</h3>
+      <p>Robots that use language models to generalize local corrections, utterances, or demonstrations to unseen tasks and environments.</p>
+    </div>
+    <div class="theme">
+      <h3>Robust Interaction</h3>
+      <p>Game-theoretic planning, robust imitation learning, and privacy-focused fine-tuning for securing user data during learning.</p>
+    </div>
+    <div class="theme">
+      <h3>Personal Communication</h3>
+      <p>Learned interfaces that discover robot-to-human communication mappings with or without task knowledge, across modalities.</p>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <div class="filters" role="group" aria-label="Filter publications">
+    <button class="on" data-filter="all">All</button>
+    <button data-filter="conference">Conference</button>
+    <button data-filter="journal">Journal</button>
+    <button data-filter="preprint">Preprint</button>
+  </div>
+
+  {%- assign years = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+  {%- for y in years %}
+  <h3 class="year">{{ y.name }}</h3>
+  <ol class="pubs">
+    {%- for p in y.items %}
+    {% include pub.html p=p %}
+    {%- endfor %}
+  </ol>
+  {%- endfor %}
+</section>
+
+<section id="reports">
+  <h2>Technical Reports</h2>
+  <p class="note">U.S. Army Engineer Research and Development Center</p>
+  <ol class="pubs compact">
+    {%- for r in site.data.reports %}
+    <li>
+      <span class="venue">{{ r.year }}</span>
+      <div>
+        <a class="title" href="{{ r.url }}">{{ r.title }}</a>
+        <p class="authors">{% include authors.html authors=r.authors %}</p>
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+</section>
+
+<section id="software">
+  <h2>Software</h2>
+  <ul class="plain">
+    {%- for x in site.data.software %}
+    <li><a href="{{ x.url }}">{{ x.name }}</a> &mdash; {{ x.description }}</li>
+    {%- endfor %}
+  </ul>
+</section>
+
+</main>
+
+<footer>&copy; {{ site.time | date: "%Y" }} Benjamin A. Christie</footer>
+
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.filters button');
+  buttons.forEach(b => b.addEventListener('click', () => {
+    const f = b.dataset.filter;
+    buttons.forEach(x => x.classList.toggle('on', x === b));
+    document.querySelectorAll('#publications .pubs li').forEach(li => {
+      li.hidden = f !== 'all' && li.dataset.type !== f;
+    });
+    // hide year headings with nothing left under them
+    document.querySelectorAll('#publications .year').forEach(h => {
+      h.hidden = ![...h.nextElementSibling.children].some(li => !li.hidden);
+    });
+  }));
+</script>
+</body>
 </html>

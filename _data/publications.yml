@@ -1,0 +1,111 @@
+# Newest first. type: conference | journal | preprint
+# venue is the short tag on the left; venue_full is optional.
+# status (optional) replaces the "venue_full, year" line, e.g. "Under review at ICRA 2027".
+# Link keys (all optional): arxiv, pdf, doi, code, video, website
+
+- title: "From Local Corrections to Generalized Skills: Improving Neuro-Symbolic Policies with MEMO"
+  authors: [Benjamin A. Christie, Yinlong Dai, Mohammad Bararjanianbahnamiri, Simon Stepputtis, Dylan P. Losey]
+  year: 2026
+  type: conference
+  venue: IROS
+  venue_full: IEEE/RSJ International Conference on Intelligent Robots and Systems
+  arxiv: https://arxiv.org/abs/2603.04560
+  pdf: https://collab.me.vt.edu/pdfs/ben_iros2026.pdf
+
+- title: "Show and Tell: Unifying Physical Demonstrations and Language Corrections for Neuro-Symbolic Robots"
+  authors: [Benjamin A. Christie, Siddarth Jain, Dylan P. Losey]
+  year: 2026
+  type: preprint
+  status: Under review at ICRA 2027
+
+- title: "Safe Interaction via Monte Carlo Linear-Quadratic Games"
+  authors: [Benjamin A. Christie, Dylan P. Losey]
+  year: 2025
+  type: preprint
+  status: Under review at ACM Transactions on Human-Robot Interaction
+  arxiv: https://arxiv.org/abs/2504.06124
+  pdf: https://collab.me.vt.edu/pdfs/ben_2026-1.pdf
+
+- title: "Fine-Tuning Robot Policies While Maintaining User Privacy"
+  authors: [Benjamin A. Christie, Sagar Parekh, Dylan P. Losey]
+  year: 2026
+  type: preprint
+  status: Under review at IEEE Robotics and Automation Letters
+  arxiv: https://arxiv.org/abs/2509.18311
+  pdf: https://collab.me.vt.edu/pdfs/ben_2026-2.pdf
+
+- title: "Language Movement Primitives: Grounding Language Models in Robot Motion"
+  authors: [Yinlong Dai, Benjamin A. Christie, Daniel J. Evans, Dylan P. Losey, Simon Stepputtis]
+  year: 2026
+  type: preprint
+  status: Under review at IEEE Transactions on Robot Learning
+  arxiv: https://arxiv.org/abs/2602.02839
+  pdf: https://collab.me.vt.edu/pdfs/dai_2026.pdf
+
+- title: "Dispersion-Bounded Trajectory Optimization via Many-RRT*"
+  authors: [Theodore M. Belmont, Benjamin A. Christie, Anton Netchaev]
+  year: 2026
+  type: preprint
+  status: Under review at ICRA 2027
+  arxiv: https://arxiv.org/abs/2603.04547
+
+- title: "Online Manipulator Collision Avoidance Using SOTA Sensing Capabilities"
+  authors: [Theodore M. Belmont, Benjamin A. Christie]
+  year: 2025
+  type: conference
+  venue: ERDC
+  venue_full: ERDC-ITL Symposium
+
+- title: "Monte-Carlo Sphere Generation for Collision Detection in Manipulators"
+  authors: [Benjamin A. Christie, Theodore M. Belmont]
+  year: 2025
+  type: conference
+  venue: ERDC
+  venue_full: ERDC-ITL Symposium
+
+- title: "Personalizing Interfaces to Humans with User-Friendly Priors"
+  authors: [Benjamin A. Christie, Heramb Nemlekar, Dylan P. Losey]
+  year: 2025
+  type: conference
+  venue: ICRA
+  venue_full: IEEE International Conference on Robotics and Automation
+  arxiv: https://arxiv.org/abs/2403.07192
+  pdf: https://collab.me.vt.edu/pdfs/ben_icra2025.pdf
+
+- title: "A Modular Haptic Display with Reconfigurable Signals for Personalized Information Transfer"
+  authors: [Antonio Alvarez Valdivia, Benjamin A. Christie, Dylan P. Losey, Laura H. Blumenschein]
+  year: 2025
+  type: journal
+  venue: ToH
+  venue_full: IEEE Transactions on Haptics
+  arxiv: https://arxiv.org/abs/2506.05648
+  pdf: https://collab.me.vt.edu/pdfs/valdivia_toh2025.pdf
+
+- title: "LIMIT: Learning Interfaces to Maximize Information Transfer"
+  authors: [Benjamin A. Christie, Dylan P. Losey]
+  year: 2024
+  type: journal
+  venue: THRI
+  venue_full: ACM Transactions on Human-Robot Interaction
+  arxiv: https://arxiv.org/abs/2304.08539
+  pdf: https://collab.me.vt.edu/pdfs/ben_thri2023.pdf
+  doi: https://doi.org/10.1145/3675758
+
+- title: "Aligning Learning with Communication in Shared Autonomy"
+  authors: [Joshua Hoegerman, Shahabedin Sagheb, Benjamin A. Christie, Dylan P. Losey]
+  year: 2024
+  type: conference
+  venue: IROS
+  venue_full: IEEE/RSJ International Conference on Intelligent Robots and Systems
+  arxiv: https://arxiv.org/abs/2403.12023
+  pdf: https://collab.me.vt.edu/pdfs/josh_iros2024.pdf
+
+- title: "Towards Robots that Influence Humans over Long-Term Interaction"
+  authors: [Shahabedin Sagheb, Ye-Ji Mun, Neema Ahmadian, Benjamin A. Christie, Andrea Bajcsy, Katherine Driggs-Campbell, Dylan P. Losey]
+  year: 2023
+  type: conference
+  venue: ICRA
+  venue_full: IEEE International Conference on Robotics and Automation
+  arxiv: https://arxiv.org/abs/2209.10588
+  doi: https://doi.org/10.1109/ICRA48891.2023.10160321
+  pdf: https://collab.me.vt.edu/pdfs/shahab_icra2023.pdf

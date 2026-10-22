@@ -1,0 +1,13 @@
+{%- assign p = include.p -%}
+{%- assign keys = "arxiv,pdf,doi,code,video,website" | split: "," -%}
+{%- assign labels = "arXiv,PDF,DOI,Code,Video,Website" | split: "," -%}
+{%- assign href = p.arxiv | default: p.pdf | default: p.doi | default: p.website -%}
+<li data-type="{{ p.type }}">
+  {%- assign tag = p.type | capitalize -%}
+<span class="venue">{{ p.venue | default: tag }}</span>
+  <div>
+    {% if href %}<a class="title" href="{{ href }}">{{ p.title }}</a>{% else %}<span class="title">{{ p.title }}</span>{% endif %}
+    <p class="authors">{% include authors.html authors=p.authors %}</p>
+    <p class="meta">{% if p.status %}{{ p.status }}{% else %}{% if p.venue_full %}{{ p.venue_full }}, {% endif %}{{ p.year }}{% endif %}{% for k in keys %}{% if p[k] %} &middot; <a href="{{ p[k] }}">{{ labels[forloop.index0] }}</a>{% endif %}{% endfor %}</p>
+  </div>
+</li>

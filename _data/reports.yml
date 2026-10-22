@@ -1,0 +1,31 @@
+# Newest first.
+
+- title: "Increasing the Degrees of Freedom on a Robot Arm"
+  authors: [Benjamin A. Christie, Cameron Alred, Michael Paquette, Garry P. Glaspell]
+  year: 2023
+  url: https://erdc-library.erdc.dren.mil/jspui/bitstream/11681/47846/1/ERDC-GRL%20TR-23-4.pdf
+
+- title: "Integrating MoveIt Motion Constraints on a Novel Robotic Manipulator"
+  authors: [Benjamin A. Christie, Jordan D. Klein, Anton D. Netchaev, Garry P. Glaspell]
+  year: 2023
+  url: https://apps.dtic.mil/sti/trecms/pdf/AD1214527.pdf
+
+- title: "3D Mapping and Navigation using MoveIt"
+  authors: [Bisrat Mekonnen, Benjamin A. Christie, Michael Paquette, Garry P. Glaspell]
+  year: 2023
+  url: https://erdc-library.erdc.dren.mil/jspui/bitstream/11681/47179/1/ERDC-GRL%20TR-23-2.pdf
+
+- title: "Autonomous Navigation and Mapping in a Simulated Environment"
+  authors: [Benjamin A. Christie, Osama Ennasr, Garry P. Glaspell]
+  year: 2021
+  url: https://erdc-library.erdc.dren.mil/jspui/bitstream/11681/42006/1/ERDC-GRL%20TR-21-5.pdf
+
+- title: "ROS Integrated Object Detection for SLAM in Unknown, Low-Visibility Environments"
+  authors: [Benjamin A. Christie, Osama Ennasr, Garry P. Glaspell]
+  year: 2021
+  url: https://erdc-library.erdc.dren.mil/jspui/bitstream/11681/42385/1/ERDC-GRL%20TR-21-6.pdf
+
+- title: "Optimized Low Size, Weight, Power and Cost (SWaP-C) Payload for Mapping Interiors and Subterranean on an Unmanned Ground Vehicle"
+  authors: [Garry P. Glaspell, Steven Lessard, Benjamin A. Christie, et al.]
+  year: 2020
+  url: https://apps.dtic.mil/sti/pdfs/AD1093600.pdf
